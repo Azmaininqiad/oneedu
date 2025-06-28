@@ -27,18 +27,18 @@ class Config:
         self.SUPABASE_URL = "https://xrahjhhjeamprikyjwyg.supabase.co"
         self.SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhyYWhqaGhqZWFtcHJpa3lqd3lnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDkwMDU3ODgsImV4cCI6MjA2NDU4MTc4OH0.9PCS7wxdTuxx2PUMyH5nA2A-dVFxGV5FUXgV0ePqHEY"
         self.SUPABASE_BUCKET = "mcq-files"
-GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')
-EVAL_SUPABASE_KEY = os.getenv('EVAL_SUPABASE_KEY')
-EVAL_SUPABASE_URL = os.getenv('EVAL_SUPABASE_URL')
-MCQ_SUPABASE_BUCKET = os.getenv('MCQ_SUPABASE_BUCKET')
-OPENROUTER_API_KEY = os.getenv('OPENROUTER_API_KEY')
-SUPABASE_BUCKET = os.getenv('SUPABASE_BUCKET')
-SUPABASE_KEY = os.getenv('SUPABASE_KEY')
-SUPABASE_URL = os.getenv('SUPABASE_URL')
-TAVUS_API_KEY = os.getenv('TAVUS_API_KEY')
-TAVUS_BASE_URL = os.getenv('TAVUS_BASE_URL')
-MCQ_SUPABASE_URL = os.getenv('EVAL_SUPABASE_KEY')
-MCQ_SUPABASE_KEY = os.getenv('EVAL_SUPABASE_URL')
+# GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')
+# EVAL_SUPABASE_KEY = os.getenv('EVAL_SUPABASE_KEY')
+# EVAL_SUPABASE_URL = os.getenv('EVAL_SUPABASE_URL')
+# MCQ_SUPABASE_BUCKET = os.getenv('MCQ_SUPABASE_BUCKET')
+# OPENROUTER_API_KEY = os.getenv('OPENROUTER_API_KEY')
+# SUPABASE_BUCKET = os.getenv('SUPABASE_BUCKET')
+# SUPABASE_KEY = os.getenv('SUPABASE_KEY')
+# SUPABASE_URL = os.getenv('SUPABASE_URL')
+# TAVUS_API_KEY = os.getenv('TAVUS_API_KEY')
+# TAVUS_BASE_URL = os.getenv('TAVUS_BASE_URL')
+# MCQ_SUPABASE_URL = os.getenv('EVAL_SUPABASE_KEY')
+# MCQ_SUPABASE_KEY = os.getenv('EVAL_SUPABASE_URL')
 # Initialize FastAPI app
 app = FastAPI(title="Combined EduTech API", version="1.0.0")
 config = Config()
@@ -59,21 +59,21 @@ app.add_middleware(
 
 # ================== Configuration ==================
 # Evaluation API Config
-# EVAL_SUPABASE_URL = "https://xrahjhhjeamprikyjwyg.supabase.co"
-# EVAL_SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhyYWhqaGhqZWFtcHJpa3lqd3lnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDkwMDU3ODgsImV4cCI6MjA2NDU4MTc4OH0.9PCS7wxdTuxx2PUMyH5nA2A-dVFxGV5FUXgV0ePqHEY"
-# GEMINI_API_KEY = "AIzaSyBoUdOFtm6VgmUdzkiTM5bW67TJXc5zMk0"
+EVAL_SUPABASE_URL = "https://xrahjhhjeamprikyjwyg.supabase.co"
+EVAL_SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhyYWhqaGhqZWFtcHJpa3lqd3lnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDkwMDU3ODgsImV4cCI6MjA2NDU4MTc4OH0.9PCS7wxdTuxx2PUMyH5nA2A-dVFxGV5FUXgV0ePqHEY"
+GEMINI_API_KEY = "AIzaSyBoUdOFtm6VgmUdzkiTM5bW67TJXc5zMk0"
 
-# # MCQ Generator Config
-# MCQ_SUPABASE_URL = "https://mixwsmdaogjctmiwiogz.supabase.co"
-# MCQ_SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1peHdzbWRhb2dqY3RtaXdpb2d6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDk5ODcyNzksImV4cCI6MjA2NTU2MzI3OX0.6Mf_49GGiEPEyMdiadmjcDjLHo26M8GxPpMGmikFEAc"
-# MCQ_SUPABASE_BUCKET = "mcq-files"
+# MCQ Generator Config
+MCQ_SUPABASE_URL = "https://mixwsmdaogjctmiwiogz.supabase.co"
+MCQ_SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1peHdzbWRhb2dqY3RtaXdpb2d6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDk5ODcyNzksImV4cCI6MjA2NTU2MzI3OX0.6Mf_49GGiEPEyMdiadmjcDjLHo26M8GxPpMGmikFEAc"
+MCQ_SUPABASE_BUCKET = "mcq-files"
 
-# # Tavus Config
-# TAVUS_API_KEY = "caa76efefe4e4a8caf2a94b05454b668"
-# TAVUS_BASE_URL = "https://tavusapi.com/v2"
+# Tavus Config
+TAVUS_API_KEY = "caa76efefe4e4a8caf2a94b05454b668"
+TAVUS_BASE_URL = "https://tavusapi.com/v2"
 
-# # OpenRouter Config
-# OPENROUTER_API_KEY = "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"
+# OpenRouter Config
+OPENROUTER_API_KEY = "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"
 
 # ================== Initialize Services ==================
 # Initialize Gemini
