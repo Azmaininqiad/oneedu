@@ -37,6 +37,8 @@ SUPABASE_KEY = os.getenv('SUPABASE_KEY')
 SUPABASE_URL = os.getenv('SUPABASE_URL')
 TAVUS_API_KEY = os.getenv('TAVUS_API_KEY')
 TAVUS_BASE_URL = os.getenv('TAVUS_BASE_URL')
+MCQ_SUPABASE_URL = os.getenv('EVAL_SUPABASE_KEY')
+MCQ_SUPABASE_KEY = os.getenv('EVAL_SUPABASE_URL')
 # Initialize FastAPI app
 app = FastAPI(title="Combined EduTech API", version="1.0.0")
 config = Config()
