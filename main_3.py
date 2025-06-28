@@ -62,7 +62,7 @@ TAVUS_API_KEY = "caa76efefe4e4a8caf2a94b05454b668"
 TAVUS_BASE_URL = "https://tavusapi.com/v2"
 
 # OpenRouter Config
-OPENROUTER_API_KEY = "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"
+OPENROUTER_API_KEY = "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"
 
 # ================== Initialize Services ==================
 # Initialize Gemini
