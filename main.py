@@ -27,7 +27,16 @@ class Config:
         self.SUPABASE_URL = "https://xrahjhhjeamprikyjwyg.supabase.co"
         self.SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhyYWhqaGhqZWFtcHJpa3lqd3lnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDkwMDU3ODgsImV4cCI6MjA2NDU4MTc4OH0.9PCS7wxdTuxx2PUMyH5nA2A-dVFxGV5FUXgV0ePqHEY"
         self.SUPABASE_BUCKET = "mcq-files"
-
+GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')
+EVAL_SUPABASE_KEY = os.getenv('EVAL_SUPABASE_KEY')
+EVAL_SUPABASE_URL = os.getenv('EVAL_SUPABASE_URL')
+MCQ_SUPABASE_BUCKET = os.getenv('MCQ_SUPABASE_BUCKET')
+OPENROUTER_API_KEY = os.getenv('OPENROUTER_API_KEY')
+SUPABASE_BUCKET = os.getenv('SUPABASE_BUCKET')
+SUPABASE_KEY = os.getenv('SUPABASE_KEY')
+SUPABASE_URL = os.getenv('SUPABASE_URL')
+TAVUS_API_KEY = os.getenv('TAVUS_API_KEY')
+TAVUS_BASE_URL = os.getenv('TAVUS_BASE_URL')
 # Initialize FastAPI app
 app = FastAPI(title="Combined EduTech API", version="1.0.0")
 config = Config()
