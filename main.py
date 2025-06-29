@@ -55,6 +55,7 @@ config = Config()
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
+        "https://classroom-3ymf.vercel.app",
         "https://classroom-3ymf-pfcm0wuoa-azmaininqiads-projects.vercel.app",
         "https://classroom-3ymf.vercel.app",
         "http://localhost:3000",
