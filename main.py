@@ -55,6 +55,7 @@ config = Config()
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
+        "https://classroomai.netlify.app",
         "https://classroom-3ymf-dn6osfftp-azmaininqiads-projects.vercel.app",
         "https://classroom-3ymf-pfcm0wuoa-azmaininqiads-projects.vercel.app",
         "https://classroom-3ymf.vercel.app",
